@@ -41,7 +41,7 @@ puts broker.comparison
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/differ.
+Bug reports and pull requests are welcome on GitHub at https://github.com/galetahub/differ.
 
 
 ## License
