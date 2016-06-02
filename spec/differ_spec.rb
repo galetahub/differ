@@ -5,7 +5,7 @@ describe Differ do
     expect(Differ::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'must build root path' do
+    expect(Differ.root_path).not_to be nil
   end
 end

@@ -7,12 +7,16 @@ module Differ
       unchanged: 3
     }.freeze
 
-    attr_reader :position, :state, :value
+    attr_reader :index, :state, :value
 
-    def initialize(value, state = :unchanged, position = nil)
+    def initialize(value, state = :unchanged, index = nil)
       @value = value
       @state = state
-      @position = position
+      @index = index
+    end
+
+    def position
+      @position ||= @index + 1
     end
 
     def state_value

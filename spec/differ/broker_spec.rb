@@ -16,7 +16,7 @@ describe Differ::Broker do
       string1.lines.each_with_index do |line, index|
         expect(broker.lines[index].state).to eq :unchanged
         expect(broker.lines[index].value).to eq line
-        expect(broker.lines[index].position).to eq index
+        expect(broker.lines[index].position).to eq index + 1
       end
     end
   end

@@ -6,10 +6,6 @@ module Differ
       @options = options
     end
 
-    def formatter
-      @formatter ||= formatter_klass.new
-    end
-
     def lines
       @lines ||= []
     end
@@ -31,6 +27,10 @@ module Differ
           compare_changed(left, right)
         end
       end
+    end
+
+    def comparison
+      formatter_klass.new(lines).format
     end
 
     protected

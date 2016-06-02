@@ -1,7 +1,8 @@
+require 'differ/formatters/text'
+
 module Differ
   module Formatters
-    class Html
-
+    class Html < Text
     end
   end
 end

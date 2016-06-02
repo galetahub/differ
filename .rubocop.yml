@@ -15,4 +15,4 @@ Metrics/ModuleLength:
 ##################### Rails ##################################
 
 Rails:
-  Enabled: true
+  Enabled: false
