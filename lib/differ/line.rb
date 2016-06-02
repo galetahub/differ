@@ -1,20 +1,22 @@
 module Differ
   class Line
     STATES = {
-      delete:    0,
+      deleted:   0,
       insert:    1,
       changed:   2,
       unchanged: 3
     }.freeze
 
-    def initialize
-      @position = 1
-      @value = ''
-      @state = 0
+    attr_reader :position, :state, :value
+
+    def initialize(value, state = :unchanged, position = nil)
+      @value = value
+      @state = state
+      @position = position
     end
 
-    def state_name
-      @state_name ||= STATES.key(@state)
+    def state_value
+      @state_value ||= STATES[@state]
     end
   end
 end
