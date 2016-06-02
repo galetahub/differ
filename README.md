@@ -25,7 +25,7 @@ Or install it yourself as:
 
     $ ./bin/differ -f ./spec/factories/files/file1.txt -f ./spec/factories/files/file2.txt
 
-    http://take.ms/wVRSl
+http://take.ms/wVRSl
 
 ### Code version
 
